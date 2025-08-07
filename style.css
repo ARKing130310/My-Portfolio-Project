@@ -340,8 +340,8 @@ body {
     text-align: center;
     font-size: large;
     font-family: arial;
-
-  }
+    cursor: pointer;
+   }
   .tittle-work {
   height: 200px;
   width: none;
@@ -443,7 +443,7 @@ body {
   margin-left: 30px;
   border-color: #310031;
 }
-.storyone{
+/* .storyone{
   height: 250px;
   width: 500px;
   border: 2px solid;
@@ -471,7 +471,86 @@ body {
   font-size: 22px;
   font-family: arial;
   padding-left: 2%;
+} */
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
 }
+
+.section-title {
+  font-size: 70px;
+  background: linear-gradient(to right, #8750f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #1a0828;
+  color: #f3f3f3;
+  padding: 25px;
+  width: 520px;
+  border-radius: 15px;
+  border: 1px solid #a855f7;
+  box-shadow: 0 6px 12px rgba(168, 85, 247, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: arial;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a855f7;
+}
+
+.client-name {
+  margin: 0;
+  font-weight: bold;
+  color: #c084fc;
+  font-family: arial;
+}
+
+.client-role {
+  margin: 0;
+  font-size: 14px;
+  font-family: arial;
+  color: #aaa;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .rowthree {
   height: 650px;
     width: none;
@@ -835,5 +914,161 @@ body {
   color: #ccc;
   margin-top: 10px;
   line-height: 1.4;
+  font-weight: bold;
+}
+.contact-main-div {
+   height:750px;
+   width: none;
+   background-color: #0a090a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contact-card {
+  height: 600px;
+  width: 500px;
+  background-color: #0f0715;
+  border: 2px solid;
+  border-color: #310031;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.contact-right{
+  height: 300px;
+  width: 500px;
+  margin-left: 5%;
+  margin-top: 10%;
+  
+}
+.contact-card h1 {
+  font-size: 40px;
+  background: linear-gradient(to right, #8750f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.contact-card p {
+  font-size: 17px;
+  font-family: arial;
+}
+.fname {
+  height: 35px;
+  width: 190px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color: gray;
+  padding-left: 10px;
+}
+.lname {
+  height: 35px;
+  width: 190px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color: gray;
+  padding-left: 10px;
+}
+.emailname {
+  height: 35px;
+  width: 190px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color: gray;
+  padding-left: 10px;
+}
+.phonename {
+  height: 35px;
+  width: 190px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color: gray;
+  padding-left: 10px;
+}
+ .message {
+  height: 200px;
+  width: 400px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color: gray;
+  padding-left: 10px;
+  font-size: 15px;
+} 
+.fed-btn {
+  background-color: #9b7e9b;
+  padding: 12px 30px; 
+  border-radius: 20px;
+  border:1px solid;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  
+}
+.fed-btn:hover {
+  background-color:#af61af; 
+  color: white;
+  border-color: #9b7e9b;
+}
+.service {
+  height: 35px;
+  width: 390px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #2f1a3f;
+  background-color:black;
+  color:white;
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+}
+.phone-icon i {
+  background-color:#0f0715;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color:#310031;
+  align-content: center;
+}
+.phone-icon{
+  font-size: large;
+  font-family: arial;
+  font-weight: bold;
+}
+.email-icon i {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color:#310031;
+  align-content: center;
+}
+.email-icon{
+  font-size: large;
+  font-family: arial;
+  font-weight: bold;
+}
+.address-icon i {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color:#310031;
+  align-content: center;
+}
+.address-icon{
+  font-size: large;
+  font-family: arial;
   font-weight: bold;
 }
