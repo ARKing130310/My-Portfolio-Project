@@ -537,6 +537,7 @@ body {
   font-weight: bold;
   color: #c084fc;
   font-family: arial;
+  padding-right: 50px;
 }
 
 .client-role {
@@ -545,6 +546,14 @@ body {
   font-family: arial;
   color: #aaa;
 }
+.client-roleone {
+  margin: 0;
+  font-size: 14px;
+  font-family: arial;
+  color: #aaa;
+  padding-right: 30px;
+}
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {
