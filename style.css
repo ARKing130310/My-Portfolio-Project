@@ -16,7 +16,6 @@ body {
   align-items: center;
   padding: 20px 50px;
 }
-
 #logo img {
   width: 80px;
   height: auto;
@@ -1083,4 +1082,120 @@ body {
   font-size: large;
   font-family: arial;
   font-weight: bold;
+}
+/* body {
+  background-color: #0d0d0d;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+} */
+
+/* Main Section */
+.review-block {
+  padding: 50px 10%;
+}
+
+.review-block__wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left Side */
+.review-block__intro {
+  flex: 1;
+}
+
+.review-block__title {
+  font-size: 45px;
+  background: linear-gradient(to right, #8750f7, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-block__title span {
+  color: #9d4edd;
+}
+
+.review-block__subtitle {
+  margin-top: 25px;
+  color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cards Layout */
+.review-block__list {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+}
+
+/* Card */
+.review-card {
+  background-color:#160133;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  border: #310031 2px solid;
+  box-shadow: 0 6px 12px rgba(154, 70, 233, 0.2);
+  transition: transform 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.review-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-card__logo {
+  width: 60px;
+}
+
+.review-card__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-card__quote-icon {
+  color: #9d4edd;
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+}
+
+.review-card__text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-card__name {
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-card__role {
+  color: #aaa;
+  font-size: 0.85rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .review-block__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-block__list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
